@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 1 | Rimsha Shahid</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .project-detail-hero {
+      background: #d6e0ea;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    
+    .project-detail-hero h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .project-detail-hero p{
+        font-size: 1rem;
+    }
+
+    .dark .project-detail-hero {
+      background: #1e1e1e;
+    }
+
+    .project-detail {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .project-detail h2 {
+      margin-bottom: 1rem;
+      color: #0077ff;
+    }
+
+    .project-info p {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .project-screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .project-screenshots img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      background-color: #00c2b2;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #00c2b2;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">Rimsha Shahid</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><button id="themeToggle"><i class="fas fa-adjust"></i></button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="project-detail-hero">
+    <h1>Project 1: WordPress Business Website</h1>
+    <p>Responsive business website built using Elementor and WooCommerce.</p>
+  </section>
+
+  <section class="project-detail">
+    <div class="project-info">
+      <h2>Project Overview</h2>
+      <p>This project was developed for a client who needed a professional online presence for their business. It includes a custom homepage, services section, product listings with WooCommerce, and contact forms.</p>
+      <p><strong>Technologies Used:</strong> WordPress, Elementor, WooCommerce, Custom CSS</p>
+      <p><strong>Role:</strong> Full Website Development, Theme Customization, WooCommerce Setup</p>
+    </div>
+
+    <div class="project-screenshots">
+      <img src="images/homepage.png" alt="Home Page Screenshot">
+      <img src="images/servicespage.png" alt="Services Page Screenshot">
+      <img src="images/aboutpage.png" alt="About Page Screenshot">
+      <img src="images/blogpage.png" alt="Blog Page Screenshot">
+      <img src="images/contactpage.png" alt="Contact Page Screenshot">
+    </div>
+
+    <a href="projects.html" class="back-btn">← Back to Projects</a>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Rimsha Shahid. All rights reserved.</p>
+    <p>Contact: <a href="mailto:rimshashahid0786@gmail.com">rimshashahid0786@gmail.com</a></p>
+    <p>Connect with me:
+      <a href="https://github.com/rimshashahid0" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/rimsha-shahid-874002343" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("themeToggle").addEventListener("click", () => {
+      document.body.classList.toggle("dark");
+    });
+  </script>
+
+</body>
+</html>
